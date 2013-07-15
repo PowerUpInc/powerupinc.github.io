@@ -129,17 +129,21 @@
 
 <p>Securely send your email and password, and receive your API tokens in return. You can use these tokens to authenticate using HTTP Basic.</p>
 
-<p><strong>Request</strong>
-    {
-        "email": String,
-        "password": String
-    }</p>
+<p><strong>Request</strong></p>
 
-<p><strong>Response</strong>
-    {
-        "user": String
-        "pass": String
-    }</p>
+<pre><code>{
+  "email": String,
+  "password": String
+}
+</code></pre>
+
+<p><strong>Response</strong></p>
+
+<pre><code>{
+  "user": String
+  "pass": String
+}
+</code></pre>
 
 <h2>
 <a name="grids-1" class="anchor" href="#grids-1"><span class="octicon octicon-link"></span></a>Grids</h2>
@@ -149,29 +153,33 @@
 
 <p>Get a list of grids that you own or collaborate on. You can filter the grids you receive by entering literal values to filter by, or by using the mongodb query filters mentioned above. Below, you'll see an example request, with all of the properties you can filter by.</p>
 
-<p><strong>Request</strong>
-    {
-       "id": ,
-      "name": String,
-      "about": String,
-      "data_types": [
-        {
-          "data_type": String,
-          "name": String
-        }
-      ],
-      "grid_buttons": [ String ],
-      "is_private": Boolean,
-      "collaborators": [ User ],
-      "powerUps": [ PowerUp ],
-      "slug": String,
-      "size": Number
-    }</p>
+<p><strong>Request</strong></p>
 
-<p><strong>Response</strong>
+<pre><code>{
+   "id": ,
+  "name": String,
+  "about": String,
+  "data_types": [
     {
-      "grids": [ Grid ]
-    }</p>
+      "data_type": String,
+      "name": String
+    }
+  ],
+  "grid_buttons": [ String ],
+  "is_private": Boolean,
+  "collaborators": [ User ],
+  "powerUps": [ PowerUp ],
+  "slug": String,
+  "size": Number
+}
+</code></pre>
+
+<p><strong>Response</strong></p>
+
+<pre><code>{
+  "grids": [ Grid ]
+}
+</code></pre>
 
 <h3>
 <a name="post-grids" class="anchor" href="#post-grids"><span class="octicon octicon-link"></span></a>POST /grids</h3>
