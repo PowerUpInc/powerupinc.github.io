@@ -45,6 +45,29 @@
 
 <p>Grids represent a goal you'd like to achieve. This grid can contain a description, one or many users collaborating together, and PowerUps that represent steps toward the overall goal.</p>
 
+<h3>
+<a name="data-structure" class="anchor" href="#data-structure"><span class="octicon octicon-link"></span></a>Data Structure</h3>
+
+<pre><code>{
+  "id": String,
+  "name": String,
+  "about": String,
+  "data_types": [
+    {
+      "data_type": String,
+      "name": String
+    }
+  ],
+  "grid_buttons": [ String ],
+  "user": User,
+  "is_private": Boolean,
+  "collaborators": [ User ],
+  "powerUps": [ PowerUp ],
+  "slug": String,
+  "size": Number
+}      
+</code></pre>
+
 <h2>
 <a name="powerups" class="anchor" href="#powerups"><span class="octicon octicon-link"></span></a>PowerUps</h2>
 
