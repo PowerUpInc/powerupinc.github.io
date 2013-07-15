@@ -125,7 +125,21 @@
 <a name="authentication" class="anchor" href="#authentication"><span class="octicon octicon-link"></span></a>Authentication</h2>
 
 <h1>
-<a name="get-tokens" class="anchor" href="#get-tokens"><span class="octicon octicon-link"></span></a>GET /tokens</h1>
+<a name="post-tokens" class="anchor" href="#post-tokens"><span class="octicon octicon-link"></span></a>POST /tokens</h1>
+
+<p>Securely send your email and password, and receive your API tokens in return. You can use these tokens to authenticate using HTTP Basic.</p>
+
+<p><strong>Request</strong>
+    {
+        "email": String,
+        "password": String
+    }</p>
+
+<p>** Response **
+    {
+        "user": String
+        "pass": String
+    }</p>
 
 <h2>
 <a name="grids-1" class="anchor" href="#grids-1"><span class="octicon octicon-link"></span></a>Grids</h2>
