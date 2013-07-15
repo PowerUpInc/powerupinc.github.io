@@ -78,6 +78,37 @@
 <p>PowerUps represent individual achievements, steps toward a bigger goal, for example, running 1 mile. These PowerUps contain metadata, which can include any arbitrary stats or info you like. Grids typically include 3 different PowerUp types, which represent different achievements.</p>
 
 <h3>
+<a name="data-structure-1" class="anchor" href="#data-structure-1"><span class="octicon octicon-link"></span></a>Data Structure</h3>
+
+<pre><code>{  
+  id: String,
+  position: Number,
+  color: String,
+  grid: Grid,
+  user: User,
+  metadata: {
+    "grid_data_type_name": Object
+  },
+  createdAt: String
+</code></pre>
+
+<h2>
+<a name="users" class="anchor" href="#users"><span class="octicon octicon-link"></span></a>Users</h2>
+
+<p>Users are people who collaborate on grids. You can see their name, id, and the grids you have in common. You can also see the PowerUps they've earned on the grids you share.</p>
+
+<h3>
+<a name="data-structure-2" class="anchor" href="#data-structure-2"><span class="octicon octicon-link"></span></a>Data Structure</h3>
+
+<pre><code>{
+  id: String,
+  name: String,
+  grids: [ Grid ],
+  power_ups: [ PowerUp ]
+}
+</code></pre>
+
+<h3>
 <a name="work-in-progress-sorry-more-to-come" class="anchor" href="#work-in-progress-sorry-more-to-come"><span class="octicon octicon-link"></span></a>Work-in-progress, sorry! More to come...</h3>
       </section>
     </div>
