@@ -147,6 +147,32 @@
 <h3>
 <a name="get-grids" class="anchor" href="#get-grids"><span class="octicon octicon-link"></span></a>GET /grids</h3>
 
+<p>Get a list of grids that you own or collaborate on. You can filter the grids you receive by entering literal values to filter by, or by using the mongodb query filters mentioned above. Below, you'll see an example request, with all of the properties you can filter by.</p>
+
+<p>** Request **
+    {
+       "id": ,
+      "name": String,
+      "about": String,
+      "data_types": [
+        {
+          "data_type": String,
+          "name": String
+        }
+      ],
+      "grid_buttons": [ String ],
+      "is_private": Boolean,
+      "collaborators": [ User ],
+      "powerUps": [ PowerUp ],
+      "slug": String,
+      "size": Number
+    }</p>
+
+<p>** Response **
+    {
+      "grids": [ Grid ]
+    }</p>
+
 <h3>
 <a name="post-grids" class="anchor" href="#post-grids"><span class="octicon octicon-link"></span></a>POST /grids</h3>
 
